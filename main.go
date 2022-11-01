@@ -9,7 +9,7 @@ func main() {
 	server := NewServer()
 	server.Start()
 
-	user, ok := <-server.userch
+	
 
 	go func() {
 		time.Sleep(2 * time.Second)
