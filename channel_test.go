@@ -1,18 +1,17 @@
 package main
 
 import (
-	"fmt"
 	"testing"
 )
 
 func TestAddUser(t *testing.T) {
-	server := NewServer()
-	server.Start()
 
-	for i := 0; i < 10; i++ {
-		go func(i int) {
-			server.userch <- fmt.Sprintf("user_%d", i)
+	// server := NewServer()
+	// server.Start()
 
-		}(i)
-	}
+	// for i := 0; i < 10; i++ {
+	// 	server.userch <- fmt.Sprintf("user_%d", i)
+	// }
+
+	// fmt.Println("the loop is done")
 }

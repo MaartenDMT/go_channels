@@ -1,8 +1,9 @@
-build:
-	go build -o bin/channels
+build: 
+	go build -o ./bin/channels
 
-run: build
-	go run ./bin/channels
+run: build 
+	./bin/channels
 
 test:
-	go test -v  ./... --race
+	go test -v ./...
+	
