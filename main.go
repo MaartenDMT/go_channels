@@ -6,10 +6,10 @@ import (
 )
 
 func main() {
+
+	main2()
 	server := NewServer()
 	server.Start()
-
-	
 
 	go func() {
 		time.Sleep(2 * time.Second)
